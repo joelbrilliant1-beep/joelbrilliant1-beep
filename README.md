@@ -6,6 +6,25 @@ I design and build AI-powered tools that turn complex data into clear, actionabl
 
 ## 🚀 What I'm Building
 
+### [MACC — Multi-Agent Command Center](https://github.com/joelbrilliant1-beep/multi-agent-platform) `Private`
+> Orchestrate AI agents across multiple LLM providers from a single dashboard.
+
+A full-stack platform for building, deploying, and managing AI agents that collaborate in real-time. Agents stream responses token-by-token, learn from every interaction, and can autonomously @mention each other to chain work across models.
+
+**Key Features:**
+- 🏗️ **Agent Builder** — Create agents from 8 starter templates or from scratch. Configure identity, model, and system prompt with a structured editor.
+- 💬 **Real-Time Streaming Chat** — Token-by-token WebSocket delivery with reply threading, markdown rendering, and syntax-highlighted code blocks.
+- 🤝 **Autonomous Collaboration** — Agents @mention each other to chain tasks across models, with depth limits, cooldowns, and a kill switch.
+- 🧠 **LLM-Powered Memory** — Every response triggers background extraction of preferences, corrections, and patterns. Weekly consolidation prevents drift.
+- 📊 **Dashboard Suite** — Overview stats, kanban task board, per-model token usage and cost tracking, and growth metrics.
+- 🎨 **Design Token System** — oklch CSS custom properties for a unified Linear/Vercel-grade aesthetic across every component.
+- 🔐 **Ed25519 Gateway Auth** — Device-signed challenge-response authentication for all agent-to-gateway communication.
+- 🌙 **Night Shift Scheduling** — launchd cron jobs for overnight agent check-ins and morning briefings.
+
+**Tech Stack:** `React 19` · `TypeScript 5.9` · `Tailwind v4` · `shadcn/ui` · `Zustand 5` · `TanStack Query v5` · `FastAPI` · `Redis Streams` · `WebSocket`
+
+---
+
 ### [Impact Studio](https://github.com/joelbrilliant1-beep/Impact-Studio) `Private`
 > Turn raw hiring data into boardroom-ready impact narratives — in under 60 seconds.
 
@@ -44,10 +63,12 @@ A modern web UI that transforms the complex ATS Configuration Workbook (Excel) i
 
 | Area | Tools & Technologies |
 |------|---------------------|
-| **Frontend** | React, Next.js, Tailwind CSS, Framer Motion |
-| **AI / ML** | Gemini API, Vision Models, Prompt Engineering |
+| **Frontend** | React 19, TypeScript, Tailwind v4, shadcn/ui, Zustand, Framer Motion |
+| **Backend** | FastAPI, Redis Streams, WebSocket, SSE |
+| **AI / ML** | Multi-LLM orchestration, Gemini API, Vision Models, Prompt Engineering |
+| **Infra** | Ed25519 auth, launchd automation, Redis AOF, LLM memory pipelines |
 | **Data Viz** | Custom dashboards, Chart.js, PPTX generation |
-| **Design** | Figma-to-code, Brand systems, Responsive UI |
+| **Design** | Design token systems, Figma-to-code, Brand systems, Responsive UI |
 
 ---
 
